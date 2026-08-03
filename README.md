@@ -49,31 +49,31 @@ DAA-Lab-Practicals/
 └── Practical-12-Travelling-Salesman-Problem/
 
 📚 Practicals
-Practical No. 	Practical Name 	Status
+Practical No. 	   Practical Name 	Status
 
-Practical 1 	Sorting Algorithms 	✅ Completed
+Practical 1 	   Sorting Algorithms 	                                           ✅ Completed
 
-Practical 2 	Linear Search and Binary Search 	✅ Completed
+Practical 2 	   Linear Search and Binary Search 	                               ✅ Completed
 
-Practical 3 	Max-Heap Sort 	✅ Completed
+Practical 3 	   Max-Heap Sort 	                                               ✅ Completed
 
-Practical 4 	Factorial using Iterative and Recursive Method 	✅ Completed
+Practical 4 	  Factorial using Iterative and Recursive Method 	               ✅ Completed
 
-Practical 5 	Knapsack Problem using Dynamic Programming 	✅ Completed
+Practical 5 	  Knapsack Problem using Dynamic Programming 	                   ✅ Completed
 
-Practical 6 	Matrix Chain Multiplication using Dynamic Programming 	⏳ In Progress
+Practical 6 	  Matrix Chain Multiplication using Dynamic Programming 	      ⏳ In Progress
 
-Practical 7 	Making Change Problem using Dynamic Programming 	⏳ In Progress
+Practical 7 	 Making Change Problem using Dynamic Programming 	              ⏳ In Progress
 
-Practical 8 	Graph Traversal (DFS and BFS) 	⏳ In Progress
+Practical 8 	 Graph Traversal (DFS and BFS) 	                                 ⏳ In Progress
 
-Practical 9 	Prim's Algorithm 	⏳ In Progress
+Practical 9 	 Prim's Algorithm 	                                             ⏳ In Progress
 
-Practical 10 	Kruskal's Algorithm 	⏳ In Progress
+Practical 10 	 Kruskal's Algorithm 	                                         ⏳ In Progress
 
-Practical 11 	Floyd–Warshall Algorithm 	⏳ In Progress
+Practical 11 	 Floyd–Warshall Algorithm 	                                     ⏳ In Progress
 
-Practical 12 	Travelling Salesman Problem (TSP) 	⏳ In Progress
+Practical 12 	 Travelling Salesman Problem (TSP) 	                             ⏳ In Progress
 
 📖 Repository Features
 
