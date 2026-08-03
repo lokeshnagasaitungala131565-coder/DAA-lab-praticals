@@ -1,0 +1,304 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "cf24ad35-2cce-426a-a946-dbad945bccdf",
+   "metadata": {},
+   "source": [
+    "      Knapsack Problem using Dynamic Programming Algorithm"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a94a40ba-9eb8-4845-9547-958a9bb2d577",
+   "metadata": {},
+   "source": [
+    "Aim:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9317df82-e867-43a8-9711-d2c08a380c3d",
+   "metadata": {},
+   "source": [
+    "To implement the 0/1 Knapsack Problem using Dynamic Programming and determine the maximum profit that can be obtained without exceeding the given knapsack capacity."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e12dcb2e-31ea-4186-8a3e-1b301909f4fb",
+   "metadata": {},
+   "source": [
+    "Objective"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0289c6bf-bad3-4671-93e9-466d2e277701",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To understand the concept of Dynamic Programming.\n",
+    "To solve the 0/1 Knapsack Problem using Dynamic Programming.\n",
+    "To maximize the total profit while satisfying the weight constraint.\n",
+    "To analyze the time and space complexity of the algorithm."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "da426a26-c289-4cdf-9d64-03e86934f576",
+   "metadata": {},
+   "source": [
+    "Introduction"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a6a10886-33ae-454c-b027-befdaa164c16",
+   "metadata": {},
+   "source": [
+    "The 0/1 Knapsack Problem is one of the most popular optimization problems in computer science. Given a set of items, each with a weight and a value, the objective is to determine the maximum total value that can be placed into a knapsack with a limited weight capacity.\n",
+    "\n",
+    "In the 0/1 Knapsack Problem, each item can either be:\n",
+    "\n",
+    "    Included exactly once (1)\n",
+    "    Not included at all (0)\n",
+    "\n",
+    "Dynamic Programming solves this problem by storing solutions to smaller subproblems and using them to build the final solution efficiently."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "19b908eb-c68e-48f5-bbe6-5a24903956f0",
+   "metadata": {},
+   "source": [
+    "Software Used"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8f857977-e858-4279-92fd-9a92affc5bb2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Python 3.x\n",
+    "Anaconda Distribution\n",
+    "Jupyter Notebook"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "37431369-a6a5-4666-8641-99cb7661d26b",
+   "metadata": {},
+   "source": [
+    "Program Included"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "07618782-10df-46ef-9a0f-8f90ebd276ee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "0/1 Knapsack Problem using Dynamic Programming"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "26b8fe0a-0ffd-4acb-bc36-660b109a3221",
+   "metadata": {},
+   "source": [
+    "Algorithm"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1c1bc8e0-be93-4642-bdc8-5d719c909c79",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1. Start.\n",
+    "2. Read the number of items.\n",
+    "3. Read the value and weight of each item.\n",
+    "4. Read the capacity of the knapsack.\n",
+    "5. Create a Dynamic Programming (DP) table of size (number of items + 1) × (capacity + 1).\n",
+    "6. Initialize the first row and first column with zero.\n",
+    "7. For each item:\n",
+    "    a.If the item's weight is less than or equal to the current capacity:\n",
+    "        b.Choose the maximum of:\n",
+    "            c.Including the item.\n",
+    "            d.Excluding the item.\n",
+    "    e.Otherwise, exclude the item.\n",
+    "8. Store the maximum value in the DP table.\n",
+    "9. Display the maximum profit.\n",
+    "10.Stop."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d982acfc-48cf-431c-9894-39eeb372f50c",
+   "metadata": {},
+   "source": [
+    "Sample Input"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "02c12113-4bd0-459a-be21-e75e60d5c0c8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Enter the number of items: 4\n",
+    "\n",
+    "Values : 1 4 5 7\n",
+    "Weights: 1 3 4 5\n",
+    "\n",
+    "Knapsack Capacity: 7"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "26d42fb1-f51c-4754-b516-fcb0dc98b69e",
+   "metadata": {},
+   "source": [
+    "Sample Output"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a120a53f-68a9-4d79-b8c6-d125a37602b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Maximum Profit = 9"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0985fb8f-e53b-4bc1-8b32-597ca48521c5",
+   "metadata": {},
+   "source": [
+    "Time Complexity"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "57d7b16f-34ed-42a3-be91-3ab9b2244ba1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Case \t        Complexity\n",
+    "\n",
+    "Best Case \t    O(n × W)\n",
+    "\n",
+    "Average Case \tO(n × W)\n",
+    "\n",
+    "Worst Case \t    O(n × W)\n",
+    "\n",
+    "where\n",
+    "     n = Number of items\n",
+    "\n",
+    "     W = Knapsack capacity"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a9b99178-c5fe-4278-a145-30e5921d0caa",
+   "metadata": {},
+   "source": [
+    "Space Complexity"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8193d7de-b723-4378-abfc-d2a2f9c38ce2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Algorithm Space    Complexity\n",
+    "\n",
+    "0/1 Knapsack \t   O(n × W)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d47ddf0e-1d25-4e2a-92f8-d0cae6a28d1f",
+   "metadata": {},
+   "source": [
+    "Files Included"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fa40711c-8b21-4e08-9e61-ff983a895fda",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "File Name \t              Description\n",
+    "\n",
+    "Knapsack_Problem.ipynb \tPython implementation of the 0/1 Knapsack Problem using Dynamic Programming"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f98c54b-c060-4031-9c0b-9ea1460a29b7",
+   "metadata": {},
+   "source": [
+    "Applications"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "078ea13d-1628-4f3f-a490-50cae7848a1c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Resource Allocation\n",
+    "Budget Planning\n",
+    "Cargo Loading\n",
+    "Investment Planning\n",
+    "Project Selection\n",
+    "Inventory Management"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "930b3229-b22e-480c-b7d8-9aa9f7642cbf",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
